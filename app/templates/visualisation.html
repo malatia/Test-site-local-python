@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="NearbAI, Visualisation​​, Prédictions">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('static',filename = 'Visualisation.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('static',filename = 'jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('static',filename = 'nicepage.js')}}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.18.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "NearbAI",
+		"logo": "images/nearbailogo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Visualisation">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-palette-1-dark-1 u-header" id="sec-517f"><a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="600" data-image-height="480">
+        <img src="{{url_for('static',filename = 'images/nearbailogo.png')}}" class="u-logo-image u-logo-image-1" data-image-width="124.419">
+      </a><nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{url_for('accueil')}}" style="padding: 22px 26px;">Accueil</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{url_for('about')}}" style="padding: 22px 26px;">About</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{url_for('prediction')}}" style="padding: 22px 26px;">Prédiction</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{url_for('visualisation')}}" style="padding: 22px 26px;">Visualisation</a>
+</li></ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('accueil')}}" style="padding: 22px 26px;">Accueil</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('about')}}" style="padding: 22px 26px;">About</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('prediction')}}" style="padding: 22px 26px;">Prédiction</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('visualisation')}}" style="padding: 22px 26px;">Visualisation</a>
+</li></ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav></header>
+    <section class="u-clearfix u-section-1" id="sec-8286">
+      <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-style u-image u-layout-cell u-size-60 u-image-1" data-image-width="1280" data-image-height="853">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="u-form u-form-1">
+                  <form action="{{url_for('dashboard')}}" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="custom" name="form">
+                    <div class="u-form-group u-form-name">
+                      <label for="name-6797" class="u-form-control-hidden u-label u-label-1"></label>
+                      <input type="text" placeholder="Min Value" id="name-6797" name="min-value" class="u-border-1 u-border-grey-30 u-custom-font u-gradient u-heading-font u-input u-input-rectangle u-radius-15 u-input-1">
+                    </div>
+                    <div class="u-form-group">
+                      <label for="email-6797" class="u-form-control-hidden u-label u-label-2"></label>
+                      <input type="text" placeholder="Max Value" id="email-6797" name="max-value" class="u-border-1 u-border-grey-30 u-custom-font u-gradient u-heading-font u-input u-input-rectangle u-radius-15 u-input-2">
+                    </div>
+                    <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-form-group-3">
+                      <input type="checkbox" id="checkbox-549a" name="near-ocean" value="On" checked="checked">
+                      <label for="checkbox-549a" class="u-label u-label-3">Near Ocean</label>
+                    </div>
+                    <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-form-group-4">
+                      <input type="checkbox" id="checkbox-c705" name="island" value="On" checked="checked">
+                      <label for="checkbox-c705" class="u-label u-label-4">Island</label>
+                    </div>
+                    <div class="u-form-checkbox u-form-group u-form-partition-factor-3 u-form-group-5">
+                      <input type="checkbox" id="checkbox-fcfc" name="inland" value="On" checked="checked">
+                      <label for="checkbox-fcfc" class="u-label u-label-5">Inland</label>
+                    </div>
+                    <div class="u-align-left u-form-group u-form-submit">
+                      <input type="submit" value="submit"">
+                    </div>
+                    <input type="hidden" value="" name="recaptchaResponse">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-20ea"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1"> Projet agile, NearbAI<br>Powered by Marie, Brahiman, Thuy et Yoan
+        </p>
+      </div></footer>
+  </body>
+</html>

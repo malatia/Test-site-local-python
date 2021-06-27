@@ -1,0 +1,131 @@
+.u-section-1 {
+  min-height: 738px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-image-1 {
+  min-height: 738px;
+  background-image: url("images/29157b208a21b3028c81e723c99bd1f48d3348d103c96a94973b406bdb12e71b3f3eb5d3a13be09cc325a9f6bb078ccde6dc88fe7ddd323d502298_12803.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-form-1 {
+  height: 271px;
+  margin: 404px 797px 0 55px;
+}
+
+.u-section-1 .u-label-1 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-1 {
+  background-image: linear-gradient(to right, white, #478ac9);
+  font-weight: 700;
+}
+
+.u-section-1 .u-label-2 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-input-2 {
+  background-image: linear-gradient(to right, white, #478ac9);
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-3 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-3 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-4 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-4 {
+  font-weight: 700;
+}
+
+.u-section-1 .u-form-group-5 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-5 {
+  font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 {
+    min-height: 626px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    position: relative;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 609px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 652px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 {
+    min-height: 503px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 466px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 432px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 {
+    min-height: 705px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 350px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 292px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 {
+    min-height: 481px;
+  }
+
+  .u-section-1 .u-image-1 {
+    min-height: 220px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 92px;
+  }
+}
