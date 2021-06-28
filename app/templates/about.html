@@ -3,14 +3,14 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="NearbAI, Visualisation​​, Prédictions">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>About</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="About.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('static',filename = 'About.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('static',filename = 'jquery.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('static',filename = 'nicepage.js')}}" defer=""></script>
     <meta name="generator" content="Nicepage 3.18.0, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     
@@ -26,7 +26,7 @@
     <meta property="og:type" content="website">
   </head>
   <body class="u-body"><header class="u-clearfix u-header u-palette-1-dark-1 u-header" id="sec-517f"><a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="600" data-image-height="480">
-        <img src="images/nearbailogo.png" class="u-logo-image u-logo-image-1" data-image-width="124.419">
+        <img src="{{url_for('static',filename = 'images/nearbailogo.png')}}" class="u-logo-image u-logo-image-1" data-image-width="124.419">
       </a><nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
         <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
           <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
@@ -37,26 +37,49 @@
           </a>
         </div>
         <div class="u-custom-menu u-nav-container">
-          <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Accueil.html" style="padding: 22px 26px;">Accueil</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 22px 26px;">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Prédiction.html" style="padding: 22px 26px;">Prédiction</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Visualisation.html" style="padding: 22px 26px;">Visualisation</a>
-</li></ul>
+          <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{url_for('accueil')}}" style="padding: 22px 26px;">Accueil</a>
+          </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{url_for('about')}}" style="padding: 22px 26px;">About</a>
+          </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{url_for('prediction')}}" style="padding: 22px 26px;">Prédiction</a>
+          </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{url_for('visualisation')}}" style="padding: 22px 26px;">Visualisation</a>
+          </li></ul>
         </div>
         <div class="u-custom-menu u-nav-container-collapse">
           <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
             <div class="u-sidenav-overflow">
               <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Accueil.html" style="padding: 22px 26px;">Accueil</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="About.html" style="padding: 22px 26px;">About</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Prédiction.html" style="padding: 22px 26px;">Prédiction</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Visualisation.html" style="padding: 22px 26px;">Visualisation</a>
-</li></ul>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('accueil')}}" style="padding: 22px 26px;">Accueil</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('about')}}" style="padding: 22px 26px;">About</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('prediction')}}" style="padding: 22px 26px;">Prédiction</a>
+              </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('visualisation')}}" style="padding: 22px 26px;">Visualisation</a>
+              </li></ul>
             </div>
           </div>
           <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
         </div>
       </nav></header> 
+
+      <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+    </div>
+  </nav></header>
+<section class="u-clearfix u-palette-1-dark-2 u-section-1" id="sec-2235">
+  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+    <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1">
+      <h2 style="text-align: left;">Qui sommes-nous?</h2>
+      <p style="text-align: left;">
+        <span style="line-height: 2.0;">&nbsp;Nous sommes une équipe dynamique et motivée par l'envie de vous rendre la vie plus facile! NearbAI est un projet qui a vu le jour à l'école DEV IA Microsoft By Simplon. Il a été porté par quatre apprenants : Brahiman, Marie, Thuy et Yoan.<img align="center" style="width: 382px;" class="fr-dii fr-fic fr-fil" src="{{url_for('static', filename='images/0f755197a6263a91a42283464308bee0d8fdd7ae7cf7069ba256cec840d10ecae2e83268e70e56ea2ab8ba11ae36b1319c1648b8ded6dd49e0831b_1280.jpg')}}" width="570">&nbsp;
+        </span>
+      </p>
+      <h2 style="text-align: left;">
+        <br>
+      </h2>
+      <p style="text-align: left;">Nous venons tous de millieux très différents, avons des âges variés, des origines hétérogènes, en bref, rien ne nous destinait à travailler ensemble, à part notre amour de l'IA. Et c'est autour de cette passion commune que nous avons appris à nous connaître, à nous reconnaître. Nous avons chacun appris des autres, et ensemble, nous pouvons tirer le meilleur de nous même!</p>
+      <p style="text-align: left;">
+        <br>
+      </p>
+      <p style="text-align: left;">(PHOTO NON CONTRACTUELLE)&nbsp;</p>
+    </div>
+  </div>
+</section>
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-20ea"><div class="u-clearfix u-sheet u-sheet-1">
