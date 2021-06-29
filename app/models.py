@@ -48,5 +48,7 @@ def graphique(min,max,inland,near_ocean,island):
     plt.savefig("app/static/images/dashboard.png")
     data.plot(kind="scatter", x="median_income", y="median_house_value", alpha=0.3, figsize=(width-2,height), c="ocean_proximity",cmap=plt.get_cmap("jet"), colorbar=True)
     plt.savefig("app/static/images/dashboard2.png")
+    data.hist(bins=50, figsize=(width-2,height))
+    plt.savefig("app/static/images/dashboard3.png")
 
     return None
